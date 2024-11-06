@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        Test-bullet
+        Welcome to RenderCV! 
     </title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
@@ -43,16 +43,18 @@
         <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
         </ul>
         </div>
-        <h1>Test-bullet</h1>
-        <div class="entry bullet-entry" style="display: contents;">
-        <ul>
-        <li>This is a test bullet.</li>
-        </ul>
-        </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Welcome to RenderCV!</h1>
+        </div>
+        <div class="entry text-entry" style="display: contents;">
         <p><a href="https://rendercv.com">RenderCV</a> is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with <strong>Markdown syntax support</strong> and <strong>complete control over the LaTeX code</strong>.</p>
+        </div>
+        <div class="entry text-entry" style="display: contents;">
         <p>The boilerplate content was inspired by <a href="https://github.com/dnl-blkv/mcdowell-cv">Gayle McDowell</a>.</p>
+        </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Quick Guide</h1>
+        </div>
         <div class="entry bullet-entry" style="display: contents;">
         <ul>
         <li>Each section title is arbitrary and each section contains a list of entries.</li>
@@ -73,15 +75,29 @@
         <li><a href="https://docs.rendercv.com/user_guide/">Here</a>, you can find a comprehensive user guide for RenderCV.</li>
         </ul>
         </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Education</h1>
-        <h2>University of Pennsylvania, BS in Computer Science</h2>
+        </div>
+        <div class="entry education-entry">
+        <h1 class="entry-title">
+        University of Pennsylvania, BS in Computer Science
+        </h1>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li>Sept 2000 – May 2005</li>
         <li>GPA: 3.9/4.0 (<a href="https://example.com">a link to somewhere</a>)</li>
         <li><strong>Coursework:</strong> Computer Architecture, Comparison of Learning Algorithms, Computational Theory</li>
         </ul>
+        </div>
+        </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Experience</h1>
-        <h2>Apple, Software Engineer</h2>
+        </div>
+        <div class="entry experience-entry">
+        <h1 class="entry-title">
+        Apple, Software Engineer
+        </h1>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li>June 2005 – Aug 2007</li>
         <li>Cupertino, CA</li>
@@ -89,7 +105,13 @@
         <li>Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database</li>
         <li>Redesigned chat file format and implemented backward compatibility for search</li>
         </ul>
-        <h2>Microsoft, Software Engineer Intern</h2>
+        </div>
+        </div>
+        <div class="entry experience-entry">
+        <h1 class="entry-title">
+        Microsoft, Software Engineer Intern
+        </h1>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li>June 2003 – Aug 2003</li>
         <li>Redmond, WA</li>
@@ -99,36 +121,72 @@
         <li>Created a test case generation tool that creates random XML docs from XML Schema</li>
         <li>Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts</li>
         </ul>
+        </div>
+        </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Publications</h1>
-        <h2>3D Finite Element Analysis of No-Insulation Coils (<a href="https://doi.org/10.1109/TASC.2023.3340648">10.1109/TASC.2023.3340648</a>)</h2>
+        </div>
+        <div class="entry publication-entry">
+        <h2 class="entry-title">3D Finite Element Analysis of No-Insulation Coils ([10.1109/TASC.2023.3340648](https://doi.org/10.1109/TASC.2023.3340648))</h2>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li>Jan 2004</li>
         <li>Frodo Baggins, <strong><em>John Doe</em></strong>, Samwise Gamgee</li>
         </ul>
+        </div>
+        </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Projects</h1>
-        <h2>Multi-User Drawing Tool</h2>
+        </div>
+        <div class="entry normal-entry">
+        <h1 class="entry-title">
+        Multi-User Drawing Tool
+        </h1>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li><a href="https://github.com/sinaatalay/rendercv">github.com/name/repo</a></li>
         <li>Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized</li>
         <li>Tools Used: C++, MFC</li>
         </ul>
-        <h2>Synchronized Desktop Calendar</h2>
+        </div>
+        </div>
+        <div class="entry normal-entry">
+        <h1 class="entry-title">
+        Synchronized Desktop Calendar
+        </h1>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li><a href="https://github.com/sinaatalay/rendercv">github.com/name/repo</a></li>
         <li>Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users</li>
         <li>Tools Used: C#, .NET, SQL, XML</li>
         </ul>
-        <h2>Custom Operating System</h2>
+        </div>
+        </div>
+        <div class="entry normal-entry">
+        <h1 class="entry-title">
+        Custom Operating System
+        </h1>
+        <div class="entry-details" style="display: contents;">
         <ul>
         <li>2002</li>
         <li>Built a UNIX-style OS with a scheduler, file system, text editor, and calculator</li>
         <li>Tools Used: C</li>
         </ul>
+        </div>
+        </div>
+        <div class="section section-title" style="display: contents;">
         <h1>Technologies</h1>
+        </div>
+        <div class="entry entry-oneline Languages" style="display: contents;">
         <ul>
         <li>Languages: C++, C, Java, Objective-C, C#, SQL, JavaScript</li>
+        </ul>
+        </div>
+        <div class="entry entry-oneline Technologies" style="display: contents;">
+        <ul>
         <li>Technologies: .NET, Microsoft SQL Server, XCode, Interface Builder</li>
         </ul>
+        </div>
     </article>
 </body>
 

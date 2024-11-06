@@ -1,6 +1,6 @@
 <h1 class='cv-name'><<cv.name>>'s CV</h1>
 
-<div markdown='1' class="cv-details" style='display: contents;'>
+<div class="cv-details" style='display: contents;' markdown='1'>
 
 ((* if cv.phone *))
 - Phone: <<cv.phone|replace("tel:", "")|replace("-"," ")>>
