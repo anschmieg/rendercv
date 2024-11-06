@@ -1,0 +1,20 @@
+<section class="publication-entry" id="publication-{{ entry.id }}">
+    <h2 class="title">
+        {{ entry.title }}
+        {% if entry.doi %}
+            (<a href="{{ entry.doi_url }}">{{ entry.doi }}</a>)
+        {% elif entry.url %}
+            (<a href="{{ entry.clean_url }}">{{ entry.url }}</a>)
+        {% endif %}
+    </h2>
+    
+    <ul class="publication-details">
+        {% if entry.date_string %}
+            <li class="date">{{ entry.date_string }}</li>
+        {% endif %}
+        <li class="authors">{{ entry.authors|join(", ") }}</li>
+        {% if entry.journal %}
+            <li class="journal">{{ entry.journal }}</li>
+        {% endif %}
+    </ul>
+</section>

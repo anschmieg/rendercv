@@ -1,0 +1,27 @@
+<header class="cv-header" id="cv-header">
+    <h1>{{ cv.name }}'s CV</h1>
+    
+    <ul class="contact-info">
+        {% if cv.phone %}
+            <li class="phone">Phone: {{ cv.phone|replace("tel:", "")|replace("-"," ") }}</li>
+        {% endif %}
+        
+        {% if cv.email %}
+            <li class="email">Email: <a href="mailto:{{ cv.email }}">{{ cv.email }}</a></li>
+        {% endif %}
+        
+        {% if cv.location %}
+            <li class="location">Location: {{ cv.location }}</li>
+        {% endif %}
+        
+        {% if cv.website %}
+            <li class="website">Website: <a href="{{ cv.website }}">{{ cv.website|replace("https://","")|replace("/","") }}</a></li>
+        {% endif %}
+        
+        {% if cv.social_networks %}
+            {% for network in cv.social_networks %}
+                <li class="social-network">{{ network.network }}: <a href="{{ network.url }}">{{ network.username }}</a></li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</header>

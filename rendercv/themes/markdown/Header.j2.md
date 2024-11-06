@@ -1,4 +1,6 @@
-# <<cv.name>>'s CV
+<h1 class='cv-name'><<cv.name>>'s CV</h1>
+
+<div markdown='1' class="cv-details" style='display: contents;'>
 
 ((* if cv.phone *))
 - Phone: <<cv.phone|replace("tel:", "")|replace("-"," ")>>
@@ -17,3 +19,5 @@
 - <<network.network>>: [<<network.username>>](<<network.url>>)
     ((* endfor *))
 ((* endif *))
+
+</div>

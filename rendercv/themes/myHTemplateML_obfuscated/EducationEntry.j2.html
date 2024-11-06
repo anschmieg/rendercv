@@ -1,0 +1,17 @@
+<section class="education-entry" id="education-{{ entry.id }}">
+    <h2 class="institution">{{ entry.institution }}, {% if entry.degree %}{{ entry.degree }} in {% endif %}{{ entry.area }}</h2>
+    
+    {% if entry.date_string %}
+        <p class="date">{{ entry.date_string }}</p>
+    {% endif %}
+    
+    {% if entry.location %}
+        <p class="location">{{ entry.location }}</p>
+    {% endif %}
+    
+    <ul class="highlights">
+        {% for item in entry.highlights %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</section>
