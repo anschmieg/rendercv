@@ -324,6 +324,7 @@ def render_an_html_from_markdown(markdown_file_path: pathlib.Path, rendercv_data
 
     Args:
         markdown_file_path: The path to the Markdown file.
+        rendercv_data_model: The data model.
 
     Returns:
         The path to the rendered HTML file.
@@ -346,7 +347,12 @@ def render_an_html_from_markdown(markdown_file_path: pathlib.Path, rendercv_data
 
     jinja2_environment = templater.Jinja2Environment().environment
     html_template = jinja2_environment.get_template("main.j2.html")
-    html = html_template.render(html_body=html_body, cv=rendercv_data_model.cv)
+    html = html_template.render(
+        html_body=html_body, 
+        cv=rendercv_data_model.cv,
+        locale=rendercv_data_model.locale,
+        design=rendercv_data_model.design
+    )
 
     # Write html into a file:
     html_file_path = markdown_file_path.parent / f"{markdown_file_path.stem}.html"
